@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Левчанский Величанский</title>
+  <style>
+    @keyframes neonBackground {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @keyframes rgbText {
+      0% {
+        color: rgb(255, 0, 0);
+        text-shadow: 0 0 15px rgb(255, 0, 0);
+      }
+      33% {
+        color: rgb(0, 255, 0);
+        text-shadow: 0 0 15px rgb(0, 255, 0);
+      }
+      66% {
+        color: rgb(0, 0, 255);
+        text-shadow: 0 0 15px rgb(0, 0, 255);
+      }
+      100% {
+        color: rgb(255, 0, 0);
+        text-shadow: 0 0 15px rgb(255, 0, 0);
+      }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(
+        270deg,
+        #ff00ff,
+        #00ffff,
+        #ff0055,
+        #00ff99,
+        #ff00ff,
+        #00ffff,
+        #ff0055,
+        #00ff99
+      );
+      background-size: 1600% 1600%;
+      animation: neonBackground 30s ease infinite;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      animation-fill-mode: forwards;
+      color: rgb(255, 0, 0);
+      animation: rgbText 6s linear infinite;
+    }
+
+    .container {
+      padding: 2em;
+      max-width: 800px;
+      margin: 0 auto;
+      background: rgba(0, 0, 0, 0.15);
+      border-radius: 20px;
+      box-shadow: 0 0 60px #ff00ff, 0 0 20px #00ffff, 0 0 30px #ff0055;
+    }
+
+    .hero-img {
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 0 40px #00ffffaa;
+      margin-bottom: 2em;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+      animation: rgbText 6s linear infinite;
+    }
+
+    .quote {
+      font-size: 1.4em;
+      font-style: italic;
+      color: inherit;
+      margin-bottom: 2em;
+      line-height: 1.6em;
+      animation: rgbText 6s linear infinite;
+      text-shadow: 0 0 20px currentColor;
+    }
+
+    a.telegram-button {
+      text-decoration: none;
+      color: #fff;
+      background: #0088cc;
+      padding: 0.8em 1.6em;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 20px #0088cc;
+    }
+    a.telegram-button:hover {
+      background: #0077b3;
+      box-shadow: 0 0 30px #0077b3;
+    }
+
+    footer {
+      margin-top: 4em;
+      font-size: 0.8em;
+      color: #eee;
+      animation: rgbText 6s linear infinite;
+      text-shadow: 0 0 10px currentColor;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="hero-img" src="drowned.jpg" alt="Левчанский Величанский" />
+    <h1>Левчанский Величанский</h1>
+    <p class="quote">
+      Сообщения тонут.<br />
+      Линии связи рушатся.<br />
+      Я здесь не чтобы говорить — я здесь, чтобы быть услышанным.
+    </p>
+    <a class="telegram-button" href="https://t.me/p_r_a_v_e_d_n_i_y" target="_blank">Telegram</a>
+  </div>
+  <footer>&copy; 2025 Левчанский Величанский</footer>
+</body>
+</html>
